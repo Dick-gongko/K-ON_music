@@ -1,1 +1,61 @@
-/* pages/searchList/index.wxss */
+/* 搜索栏 */
+.searchMusicBg{
+  width: 100%;
+  height: 120rpx;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.inputSearcMusic{
+  height: 80rpx;
+  width: 490rpx;
+}
+.inputSearcMusicView{
+  height: 80rpx;
+  width: 80%;
+  border-radius: 40rpx;
+  display: flex;
+  background-color: #ffffffaa;
+}
+.buttonSearch{
+    height: 80rpx;
+    width: 110rpx;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    position: absolute;
+    right: 80rpx;
+    text-align:center;
+}
+
+/* 列表内容 */
+.music-list-main{
+    width: 100%;
+    height: calc(100% - 220rpx - 170rpx - 10rpx);
+    background-color: aliceblue;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.music-list-view{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #66ccff;
+    background-color: #39c5bb;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display:  -webkit-box;
+    border-bottom: #cccccccc solid 1rpx;
+}
+.artists-name{
+    color: #ccc;
+}
+
+/* 底部音频播放模块 */
+.music-main{
+    width: 100%;
+    height: 170rpx;
+    position: absolute;
+    bottom: 0;
+    background-color: pink;
+}

@@ -1,2 +1,50 @@
-<!--pages/searchList/index.wxml-->
-<text>pages/searchList/index.wxml</text>
+<cu-custom bgColor="bg-tianyi-miku">
+	<view slot="content">梦开始的地方</view>
+</cu-custom>
+<!-- 搜素功能 -->
+<view class="bg-tianyi-miku searchMusicBg flex">
+	<view class="inputSearcMusicView">
+		<input
+		 type="text"
+		 bindinput="searchMusic"
+		 placeholder="搜素歌曲"
+		 bindfocus="inputFocustrue"
+		 bindblur="inputFocusfalse"
+		 class="padding-left inputSearcMusic"
+		></input>
+		<navigator class="buttonSearch" url="/pages/searchList/index?value={{searchValue}}">
+			搜索
+		</navigator>
+	</view>
+</view>
+
+<!-- 播放选项 -->
+<view class="music-main">
+
+</view>
+
+<!-- 歌曲列表 -->
+<view class="music-list-main">
+	<view
+	 class="music-list-view text-xl padding-left"
+	 wx:for="{{musicValue}}"
+	 wx:for-item="item1"
+	 wx:for-index="index1"
+	 wx:key="{{item1.id}}"
+	 bindtap="tapMusic"
+	 data-id="{{item1.id}}"
+	>
+		{{item1.name}}—
+		<span
+		 wx:for="{{item1.artists}}"
+		 wx:key="this"
+		 wx:for-item="item2"
+		 wx:for-index="index2"
+		 class="artists-name"
+		>
+			{{item2.name}}
+			<text wx:if="{{index2<item1.artists.length-1}}">、</text>
+		</span>
+	</view>
+</view>
+

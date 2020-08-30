@@ -8,9 +8,15 @@
 }
 .inputSearcMusic{
   height: 80rpx;
+  width: 490rpx;
+}
+.inputSearcMusicView{
+  height: 80rpx;
   width: 80%;
   border-radius: 40rpx;
+  display: flex;
   background-color: #ffffffaa;
+
 }
 .search-music-value-main{
   margin: 0 10%;
@@ -19,11 +25,15 @@
   width: 80%;
   height: 35%;
   position: absolute;
-  border-radius: 30rpx;
-  top: 230rpx;
-  /* background-color: #39c5bbaa; */
-  overflow: hidden;
+  border-radius: 40rpx;
+  top: 220rpx;
+  /*background-color: #39c5bbaa;
+  */overflow: hidden;
   overflow-y: auto;
+  -webkit-border-radius: 40rpx;
+  -moz-border-radius: 40rpx;
+  -ms-border-radius: 40rpx;
+  -o-border-radius: 40rpx;
 }
 .search-music-value{
   width: 100%;
@@ -37,10 +47,10 @@
 }
 /* 点击按键 */
 .buttonSearch{
-  height: 60rpx;
+  height: 80rpx;
   width: 110rpx;
   font-size: 30rpx;
-  line-height: 60rpx;
+  line-height: 80rpx;
   position: absolute;
   right: 80rpx;
   text-align:center;
