@@ -1,0 +1,78 @@
+<cu-custom
+ bgColor="bg-tianyi-miku"
+ style="position: relative;top:0rpx"
+ isCustom="{{true}}"
+>
+	<view slot="content">{{musicName}}</view>
+</cu-custom>
+<view class="lyric-main">
+	<!-- <view class="lyric-value " style="top: calc(50% - ({{nowLyricNum}}rpx * 60))"> -->
+	<view class="lyric-value " style="top: -{{nowLyricNum * 60}}rpx">
+		<!-- <scroll-view
+	 class="lyric-value"
+	 scroll-y="true"
+	 scroll-into-view="lyric{{nowLyricNum}}"
+	 enhanced="enhanced"
+	> -->
+		<view
+		 wx:for="{{lyricArr}}"
+		 style="{{index==nowLyricNum?discoloration:''}}"
+		 class="flex-center lyric-text"
+		 id="lyric{{index}}"
+		>
+			{{item}}
+		</view>
+		<!-- </scroll-view> -->
+	</view>
+	<!-- <view class="music-download iconfont icon-xiazai flex-center"></view> -->
+</view>
+
+<view class="fixed">
+	<view>
+		<view class="music-play-Console flex">
+			<view class="play-mode  iconfont flex-center {{playModeIcon}}" bindtap="tapPlayMode"></view>
+			<view class="back-music  iconfont icon-shangyishou flex-center" bindtap="backMusic"></view>
+			<view
+			 class="play-music iconfont {{musicPlay}} flex-center"
+			 bindtap="tapPlayKey"
+			 style="color:{{musicPlay=='icon-zanting'?'#39c5bb':''}}"
+			></view>
+			<view class="naxt-music iconfont icon-xiayishou flex-center" bindtap="nextMusic"></view>
+			<view class="play-list iconfont  flex-center icon-liebiao"></view>
+		</view>
+	</view>
+</view>
+<!-- 收藏评论下载 -->
+<view class="min-assembly-body">
+	<view class="min-assembly flex">
+		<view class="download icon-xiazai iconfont"></view>
+		<view class="comment icon-pinglun  iconfont"></view>
+		<view
+		 class="collection icon-shoucang{{isCollection?'1':''}} iconfont"
+		 style="{{isCollection?'color: pink':''}}"
+		 bindtap="tapCollection"
+		></view>
+	</view>
+</view>
+
+<!-- 音乐宠物 -->
+<view class="musicPet">
+	<image
+	 class="imgPet"
+	 mode="widthFix"
+	 src="https://i0.hdslb.com/bfs/album/7ef3f83f68c67d585b63fd03f69eb8d7f4f8c7d9.gif@518w_1e_1c.gif"
+	></image>
+</view>
+
+<!-- 进度条 -->
+<view class="progress-bar">
+	<slider
+	 bindchange="sliderchange"
+	 left-icon="cancel"
+	 right-icon="success_no_circle"
+	 block-size="10rpx"
+	 value="{{sliderValue}}"
+	 backgroundColor="#ffffff66"
+	/>
+</view>
+

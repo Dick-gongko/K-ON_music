@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-tianyi-miku" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">介绍</view>
+</cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+	<view class='text-center margin-bottom text-lg  text-grey'>关于K-ON音乐</view>
+	<view class='text-content'>
+		<view>Hi！能用到这个微信小程序的都是缘分~</view>
+		<view class='margin-top-sm'>主题色都是天依蓝和初音绿。最后的粉红色就是我的最爱啦~~</view>
+		<view class='margin-top-sm'>K-ON动画和音乐宠物呆唯的作者是B站UP主：
+			<text style="color: pink">杨大米</text>
+			。UID:9026298。经过作者同意的了哈~
+		</view>
+		<view class='margin-top-sm'>喜欢可以在
+			<text style="color: pink">B站一键三连哈</text>
+			，你的赞赏是我最好的鼓励.不喜欢方便可以联系我给出原因哦，我有时间会后续改进的。
+		</view>
+		<view class='margin-top-sm'>作者(B站):H口先生。</view>
+		<view class='margin-top-sm'>UID:130669339</view>
+
+	</view>
+</view>
+

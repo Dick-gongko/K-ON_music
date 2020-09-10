@@ -1,0 +1,50 @@
+<cu-custom bgColor="bg-pink" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">介绍</view>
+</cu-custom>
+<view class=" body">
+	<!-- 阿梓喵 -->
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:if="{{randomNum==0}}"
+	 src="https://i0.hdslb.com/bfs/album/47f3b6b1485c2619dda1ae9e3c340b4fab9c15b3.gif"
+	/>
+	<!-- 大小姐 -->
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:elif="{{randomNum==1}}"
+	 src="https://i0.hdslb.com/bfs/album/13d4ce8b65a618f9efdf7557e530b2f585027063.gif"
+	/>
+	<!-- 律队 -->
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:elif="{{randomNum==2}}"
+	 src="https://i0.hdslb.com/bfs/album/0ff04c724d51b2533ab0dcc00ab79d366080d3db.gif"
+	/>
+	<!-- 蓝白胖次 -->
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:elif="{{randomNum==3}}"
+	 src="https://i0.hdslb.com/bfs/album/967932ed4dc1896b6a9615baf0f35b148425de00.gif"
+	/>
+	<!-- 呆唯 -->
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:elif="{{randomNum==4}}"
+	 src="https://i0.hdslb.com/bfs/album/934bb39f850157c3d5fb63b1665ce43d0d0e9d4d.gif"
+	/>
+	<image
+	 class="img"
+	 mode="heightFix"
+	 wx:else
+	 src="https://i0.hdslb.com/bfs/album/7ef3f83f68c67d585b63fd03f69eb8d7f4f8c7d9.gif@518w_1e_1c.gif"
+	/>
+	<text class="text">敬请等待.....</text>
+	<text class="artist">画家(B站)：杨大米</text>
+</view>
+

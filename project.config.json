@@ -1,12 +1,13 @@
 {
   "description": "项目配置文件",
+  "cloudfunctionRoot": "cloud/",
   "packOptions": {
     "ignore": []
   },
   "setting": {
     "urlCheck": true,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -28,6 +29,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -44,6 +46,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "search": {
       "current": -1,
@@ -53,13 +56,91 @@
       "current": -1,
       "list": []
     },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
     "game": {
       "currentL": -1,
       "list": []
     },
-    "miniprogram": {
+    "gamePlugin": {
       "current": -1,
       "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": 0,
+          "name": "搜索列表",
+          "pathName": "pages/searchList/index",
+          "query": "value= 勾指起誓",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "歌词页面",
+          "pathName": "pages/lyric/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "我的",
+          "pathName": "pages/me/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "主页",
+          "pathName": "pages/home/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "收藏列表",
+          "pathName": "pages/collection/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "音乐播放控制组件",
+          "pathName": "pages/musicPlay/musicPlay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "足迹",
+          "pathName": "pages/record/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "软件介绍",
+          "pathName": "pages/introduce/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "欣赏",
+          "pathName": "pages/appreciate/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "未完成",
+          "pathName": "pages/await/index",
+          "scene": null
+        }
+      ]
     }
   }
 }

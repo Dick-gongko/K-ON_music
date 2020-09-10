@@ -1,39 +1,7 @@
-/* 搜索栏 */
-.searchMusicBg{
-  width: 100%;
-  height: 120rpx;
-  /* position: absolute;
-  position: fixed;
-  top: 100rpx; */
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-}
-.inputSearcMusic{
-  height: 80rpx;
-  width: 490rpx;
-}
-.inputSearcMusicView{
-  height: 80rpx;
-  width: 80%;
-  border-radius: 40rpx;
-  display: flex;
-  background-color: #ffffffaa;
-}
-.buttonSearch{
-    height: 80rpx;
-    width: 110rpx;
-    font-size: 30rpx;
-    line-height: 80rpx;
-    position: absolute;
-    right: 80rpx;
-    text-align:center;
-}
-
 /* 列表内容 */
 .music-list-main{
     width: 100%;
-    height: calc(100% - 220rpx - 170rpx - 10rpx);
+    height: calc(100% - 100rpx - 170rpx - 10rpx);
     background-color: aliceblue;
     /* position: relative; */
     position: absolute;
@@ -68,35 +36,6 @@
 .artists-name{
   font-size: 32rpx;
     color: #ccc;
-}
-
-/* 搜索提示 */
-.search-music-value-main{
-  margin: 0 10%;
-  padding-top: 10rpx;
-  padding-bottom: 10rpx;
-  width: 80%;
-  height: 35%;
-  position: absolute;
-  border-radius: 40rpx;
-  top: 220rpx;
-  /*background-color: #39c5bbaa;
-  */overflow: hidden;
-  overflow-y: auto;
-  -webkit-border-radius: 40rpx;
-  -moz-border-radius: 40rpx;
-  -ms-border-radius: 40rpx;
-  -o-border-radius: 40rpx;
-}
-.search-music-value{
-  width: 100%;
-  height: 60rpx;
-  line-height: 60rpx;
-  padding-left: 30rpx;
-  display:  -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 1;
 }
 
 
@@ -171,7 +110,6 @@
   line-height: 34rpx;
   font-size: 28rpx;
   color: #888;
-  position: relative;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -187,14 +125,6 @@
   color: var(--mikuGreen);
   font-size: 100rpx;
 }
-.paly-key view:active{
-  /* active */
-  color: #66ccff;
-  /* font-size: 200rpx; */
-  /* animation:2s; */
-  /* transition: 0.1s ease-in-out; */
-  /* background-color: #cccccc; */
-}
 .next-music{
   flex:3;
   
@@ -203,13 +133,7 @@
   color: #999;
   font-size: 60rpx;
 }
-.next-music view:active{
-  /* active */
-  color: #66ccff;
-  /* font-size: 100rpx; */
-  /* animation:2s; */
-  /* transition: 0.1s ease-in-out; */
-}
+
 /* 音乐宠物 */
 .imgPet{
   width: 100%;
@@ -224,10 +148,9 @@
   height: 300rpx;
 }
 
-/* span{
-  position: relative;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  display:  -webkit-box;
-} */
+.paly-key view:active{
+  color: #66ccff;
+}
+.next-music view:active{
+  color: #66ccff;
+}

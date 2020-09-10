@@ -1,74 +1,33 @@
-/* 搜素 */
-.searchMusicBg{
-  width: 100%;
-  height: 120rpx;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-}
-.inputSearcMusic{
-  height: 80rpx;
-  width: 80%;
-  border-radius: 40rpx;
-  background-color: #ffffffaa;
-}
-.search-music-value-main{
-  margin: 0 10%;
-  padding-top: 10rpx;
-  padding-bottom: 10rpx;
-  width: 80%;
-  height: 35%;
-  position: absolute;
-  border-radius: 30rpx;
-  top: 230rpx;
-  /* background-color: #39c5bbaa; */
-  overflow: hidden;
-  overflow-y: auto;
-}
-.search-music-value{
-  width: 100%;
-  height: 60rpx;
-  line-height: 60rpx;
-  padding-left: 30rpx;
-  display:  -webkit-box;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 1;
-}
-/* 点击按键 */
-.buttonSearch{
-  height: 60rpx;
-  width: 110rpx;
-  font-size: 30rpx;
-  line-height: 60rpx;
-  position: absolute;
-  right: 80rpx;
-  text-align:center;
-}
+/* 底部 */
+.bgr-music-bg{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bgr-music{
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #66ccff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .bgr-music image{
+    width: 100%;
+    height: 100%;
+  }
+  .bar{
+    position: absolute;
+    width: 100%;
+    bottom: 0rpx;
+    position: fixed;
+  }
 
-/* 主要内容 */
-.main{
-  position: absolute;
-  top: 220rpx;
-  width: 100%;
-}
-.main-value{
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 50%;
-  background-color: #39c5bb;
-}
-.main-value-text{
-  width: 200rpx;
-  height: 60rpx;
-  background-color: #66ccff;
-  top: -60rpx;
-  position: relative;
-  border-radius: 0 0 20rpx 20rpx;
-  line-height: 60rpx;
-  font-size: 36rpx;
-}
-/* 宠物 */
+  /* 宠物 */
 .imgPet{
   width: 100%;
   height: 100%;
@@ -76,33 +35,8 @@
 .musicPet{
   position: absolute;
   position: fixed;
-  bottom: 100rpx;
+  bottom: 97rpx;
   right: -50rpx;
   width: 300rpx;
   height: 300rpx;
-}
-
-/* 底部 */
-.bgr-music-bg{
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 50%;
-  background-color: #fff;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.bgr-music{
-  width: 160rpx;
-  height: 160rpx;
-  background-color: #66ccff;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.bar{
-  position: absolute;
-  width: 100%;
-  bottom: 0rpx;
-  position: fixed;
 }

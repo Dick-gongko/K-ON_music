@@ -1,0 +1,146 @@
+/* 主要内容 */
+.UCenter-bg {
+  /* background-image: url(https://image.weilanwl.com/color2.0/index.jpg); */
+  background-size: cover;
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg text {
+  opacity: 0.8;
+}
+
+.UCenter-bg image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.UCenter-bg .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+map,.mapBox{
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+map,.mapBox{
+  width: 750rpx;
+  height: 300rpx;
+}
+
+
+/* 登录过后的头部样式 */
+.user-bg{
+  height: 550rpx;
+  /* background: url(https://i0.hdslb.com/bfs/album/b32ea11326141b4dd696940ac3d8a31f1ad9674f.jpg@518w_1e_1c.jpg)  no-repeat ; */
+  /* background-image: "https://i0.hdslb.com/bfs/album/b32ea11326141b4dd696940ac3d8a31f1ad9674f.jpg@518w_1e_1c.jpg"; */
+  /* background-image: linear-gradient(90deg, pink,pink,#66ccff, pink,pink); */
+  /* position: relative; */
+  /* background-size: 100% 100%; */
+  
+}
+.k-on{
+  flex: 1;
+  /* background-color: pink; */
+  /* display: flex; */
+  position: relative;
+  /* bottom: 0rpx; */
+
+}
+.k-on image{
+  width: 100%;
+  position: absolute;
+  bottom: -4rpx;
+}
+.user-img{
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.user-img image{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 40rpx rgba(0,0,0,0.3)
+
+}
+.user-img view{
+  width: 100%;
+  margin-top: 30rpx;
+  border-radius: 50%;
+  font-size: 52rpx;
+  color: pink;
+}
+
+
+/* 登录前提示动画 */
+#log-on-img{
+  width: 450rpx;
+  height: 450rpx;
+}
+/* 登录按键 */
+#log-on-button{
+  widows: 200rpx;
+  height: 100rpx;
+  font-size: 60rpx;
+  position: relative;
+  top: -10rpx;
+}
+/* 底部 */
+.bgr-music-bg{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bgr-music{
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #66ccff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .bar{
+    position: absolute;
+    width: 100%;
+    bottom: 0rpx;
+    position: fixed;
+  }
+
+  /* 最后的操作 */
+  .icon-lx{
+    font-size: 32rpx;
+    margin-left: 6rpx;
+    margin-right: 20rpx;
+    color: pink;
+  }
+  .del{
+    font-size: 40rpx;
+    margin-left: 1rpx;
+    margin-right: 14rpx;
+    color: #66ccff;
+  }

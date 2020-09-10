@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "home":"/pages/home/index",
+    "me":"/pages/me/index"
+  }
 }

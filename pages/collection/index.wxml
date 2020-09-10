@@ -1,25 +1,6 @@
 <cu-custom bgColor="bg-tianyi-miku" isCustom="{{true}}">
-	<view slot="content">梦开始的地方</view>
+	<view slot="content">我的挚爱</view>
 </cu-custom>
-
-<!-- 搜素功能 -->
-<view class="bg-tianyi-miku searchMusicBg flex">
-	<view class="inputSearcMusicView">
-		<input
-		 type="text"
-		 bindinput="searchMusic"
-		 value="{{searchValue}}"
-		 placeholder="发现爱的开始"
-		 bindfocus="inputFocustrue"
-		 bindblur="inputFocusfalse"
-		 class="padding-left inputSearcMusic"
-		></input>
-		<view class="buttonSearch" bindtap="tapSearch">
-			出发
-		</view>
-	</view>
-</view>
-
 <!-- 歌曲列表 -->
 <view class="music-list-main">
 	<view
@@ -31,12 +12,14 @@
 	 bindtap="tapMusic"
 	 data-musicName="{{item1.name}}"
 	 data-artists="{{item1.artists}}"
+	 data-index="{{index1}}"
 	 data-id="{{item1.id}}"
 	 style="{{item1.id==previousMusicId?'background-color: pink;color: #66ccff;':''}}"
 	>
 		{{item1.name}}—
+		<!-- 歌曲的作者名，因为有可能有人创作，所以要全遍历出来 -->
 		<span
-		 wx:for="{{item1.artists}}"
+		 wx:for="{{item1.author}}"
 		 wx:key="this"
 		 wx:for-item="item2"
 		 wx:for-index="index2"

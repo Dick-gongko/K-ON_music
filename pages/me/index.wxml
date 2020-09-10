@@ -1,0 +1,116 @@
+<scroll-view scroll-y class="scrollPage">
+	<view wx:if="{{Login}}" class="user-bg bg-tianyi-miku flex">
+		<view class="k-on">
+			<image mode="widthFix" src="https://i0.hdslb.com/bfs/album/47f3b6b1485c2619dda1ae9e3c340b4fab9c15b3.gif" />
+		</view>
+		<view class="user-img">
+			<image mode="widthFix" src="{{headUrl}}" />
+			<view class="flex-center">{{myName}}</view>
+		</view>
+		<view class="k-on">
+			<image mode="widthFix" src="https://i0.hdslb.com/bfs/album/967932ed4dc1896b6a9615baf0f35b148425de00.gif" />
+		</view>
+	</view>
+	<view wx:else class="UCenter-bg bg-tianyi-miku">
+		<image src="https://i0.hdslb.com/bfs/album/967932ed4dc1896b6a9615baf0f35b148425de00.gif" id="log-on-img">
+		</image>
+		<button
+		 class="cu-btn round lines-green "
+		 id="log-on-button"
+		 role="button"
+		 aria-disabled="false"
+		 bindgetuserinfo="getUserInfo"
+		 open-type="getUserInfo"
+		>登录
+		</button>
+	</view>
+
+	<view class="padding flex text-center text-grey bg-white shadow-warp">
+		<view class="flex flex-sub flex-direction solid-right">
+			<view class="text-xxl text-orange">{{hearNum}}</view>
+			<view class="margin-top-sm">
+				<text class="iconfont icon-yinle"></text>
+				听曲
+			</view>
+		</view>
+		<view class="flex flex-sub flex-direction solid-right">
+			<view class="text-xxl text-blue">{{collectionNum}}</view>
+			<view class="margin-top-sm">
+				<text class="cuIcon-favorfill"></text>
+				喜爱
+			</view>
+		</view>
+		<view class="flex flex-sub flex-direction">
+			<view class="text-xxl text-green">{{commentNum}}</view>
+			<view class="margin-top-sm">
+				<text class="iconfont icon-pinglun"></text>
+				评论
+			</view>
+		</view>
+	</view>
+
+	<!-- 介绍 -->
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<view class="cu-item arrow">
+			<navigator
+			 class="content"
+			 url="/pages/introduce/index"
+			 hover-class="none"
+			>
+				<text class="cuIcon-formfill text-green"></text>
+				<text class="text-grey">介绍</text>
+			</navigator>
+		</view>
+		<view class="cu-item arrow">
+			<navigator class="content" url="/pages/appreciate/index">
+				<text class="cuIcon-appreciatefill text-red"></text>
+				<text class="text-grey">赞赏</text>
+			</navigator>
+		</view>
+		<view class="cu-item arrow">
+			<button class="cu-btn content" open-type="contact">
+				<text class="iconfont icon-pinglun1 icon-lx" ></text>
+				<text class="text-grey">联系</text>
+			</button>
+		</view>
+		<view class="cu-item arrow">
+			<button class="cu-btn content" bindtap="del">
+				<text class="iconfont icon-shanchu del" ></text>
+				<text class="text-grey">删除记录</text>
+			</button>
+		</view>
+		<view class="cu-item arrow">
+			<button class="cu-btn content" open-type="feedback">
+				<text class="cuIcon-writefill text-cyan"></text>
+				<text class="text-grey">意见反馈</text>
+			</button>
+		</view>
+	</view>
+	<view class="cu-tabbar-height"></view>
+</scroll-view>
+
+<!-- 底部内容 -->
+<!-- <view class="cu-bar tabbar bg-white text-gray bar">
+
+	<view class="action ">
+		<navigator url="/pages/index/index">
+
+			<view class="cuIcon-homefill"></view>
+		</navigator>
+
+		首页
+	</view>
+
+	<view class="action text-gray">
+		<view class="bgr-music-bg flex">
+			<view class="bgr-music">
+				<image mode="widthFix" src="https://i0.hdslb.com/bfs/album/13d4ce8b65a618f9efdf7557e530b2f585027063.gif"></image>
+			</view>
+		</view>
+	</view>
+	<view class="action text-mikuGreen">
+		<view class="cuIcon-my"></view>
+		我的
+	</view>
+</view> -->
+

@@ -1,0 +1,149 @@
+<cu-custom bgColor="bg-tianyi-miku">
+	<view slot="content">K-ON</view>
+</cu-custom>
+<!-- 搜素功能 -->
+<view class="bg-tianyi-miku searchMusicBg flex">
+	<view class="inputSearcMusicView">
+		<input
+		 type="text"
+		 bindinput="searchMusic"
+		 placeholder="搜素歌曲"
+		 bindfocus="inputFocustrue"
+		 bindblur="inputFocusfalse"
+		 class="padding-left inputSearcMusic"
+		></input>
+		<navigator url="/pages/searchList/index?value={{searchValue}}" class="buttonSearch">
+			搜索
+		</navigator>
+	</view>
+</view>
+
+<!-- 收藏类信息 -->
+<view class="main">
+	<view class="grid col-3 padding-sm ">
+		<!-- 收藏 -->
+		<view class="padding-sm margin-top">
+			<navigator url="/pages/collection/index">
+				<view class=" shadow-blur">
+					<view class="main-value">
+						<image
+						 class="imgPet"
+						 heightFix
+						 src="{{collectionImgSrc}}"
+						></image>
+					</view>
+					<view class="main-value-text text-center">收藏</view>
+				</view>
+			</navigator>
+		</view>
+		<!-- 下载 -->
+		<view class="padding-sm margin-top">
+			<navigator url="/pages/download/index">
+				<view class=" shadow-blur">
+					<view class="main-value">
+						<image
+						 class="imgPet"
+						 heightFix
+						 src="https://i0.hdslb.com/bfs/album/0ff04c724d51b2533ab0dcc00ab79d366080d3db.gif"
+						></image>
+					</view>
+					<view class="main-value-text text-center">下载</view>
+
+				</view>
+			</navigator>
+		</view>
+		<!-- 历史记录 -->
+		<view class="padding-sm margin-top">
+			<navigator url="/pages/record/index">
+				<view class=" shadow-blur">
+					<view class="main-value">
+						<image
+						 class="imgPet"
+						 heightFix
+						 src="{{src}}"
+						></image>
+					</view>
+					<view class="main-value-text text-center">足迹</view>
+
+				</view>
+			</navigator>
+		</view>
+
+		<!-- 空白只是为了顶过去 -->
+		<view class="margin-top"></view>
+
+		<!-- 推荐 -->
+		<view class="padding-sm">
+			<navigator url="/pages/recommend/index">
+				<view class=" shadow-blur">
+					<view class="main-value">
+						<image
+						 class="imgPet"
+						 heightFix
+						 src="https://i0.hdslb.com/bfs/album/13d4ce8b65a618f9efdf7557e530b2f585027063.gif"
+						></image>
+					</view>
+					<view class="main-value-text text-center">推荐</view>
+
+				</view>
+			</navigator>
+		</view>
+	</view>
+</view>
+<!-- 搜索提示框 -->
+<view class=" bg-cyan search-music-value-main light" hidden="{{!inputFocus}}">
+	<navigator
+	 wx:for="{{musicName}}"
+	 wx:key="{{item.id}}"
+	 wx:for-item="item1"
+	 wx:for-index="index1"
+	 url="/pages/searchList/index?value={{item1.name}} {{item1.artists[0].name}}"
+	>
+		<view class="search-music-value">
+			{{item1.name}}—
+			<span
+			 wx:for="{{item1.artists}}"
+			 wx:key="this"
+			 wx:for-item="item2"
+			 wx:for-index="index2"
+			>
+				{{item2.name}}
+				<text wx:if="{{index2<item1.artists.length-1}}">、</text>
+			</span>
+		</view>
+	</navigator>
+</view>
+<image
+ class="lb-wang"
+ heightFix
+ src="https://i0.hdslb.com/bfs/album/a3dfd739c3ee98f74e9ef5788910024ee6f0c1fe.png@518w_1e_1c.png"
+/>
+<!-- 音乐宠物 -->
+<!-- <view class="musicPet">
+	<image
+	 class="imgPet"
+	 mode="widthFix"
+	 src="https://i0.hdslb.com/bfs/album/7ef3f83f68c67d585b63fd03f69eb8d7f4f8c7d9.gif@518w_1e_1c.gif"
+	></image>
+</view> -->
+<!-- 底部内容 -->
+<!-- <view class="cu-bar tabbar bg-white bar">
+	<view class="action text-mikuGreen">
+		<view class="cuIcon-homefill"></view>
+		首页
+	</view>
+	<view class="action text-gray">
+		<view class="bgr-music-bg flex">
+			<view class="bgr-music">
+				<image mode="widthFix" src="https://i0.hdslb.com/bfs/album/13d4ce8b65a618f9efdf7557e530b2f585027063.gif"></image>
+			</view>
+		</view>
+	</view>
+	<view class="action text-gray">
+		<navigator url="/pages/me/index" open-type="redirect">
+			<view class="cuIcon-my"></view>
+		</navigator>
+		我的
+	</view>
+</view> -->
+
