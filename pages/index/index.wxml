@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <home wx:if="{{isHome}}"></home>
 <me wx:else></me>
 <!-- 底部内容 -->
@@ -27,6 +28,67 @@
 		<view class="cuIcon-my"></view>
 		我的
 	</view>
+=======
+<cu-custom bgColor="bg-tianyi-miku">
+	<view slot="content">埃罗音乐</view>
+</cu-custom>
+<!-- 搜素功能 -->
+<view class="bg-tianyi-miku searchMusicBg flex">
+	<view class="inputSearcMusicView">
+		<input
+		 type="text"
+		 bindinput="searchMusic"
+		 placeholder="搜素歌曲"
+		 bindfocus="inputFocustrue"
+		 bindblur="inputFocusfalse"
+		 class="padding-left inputSearcMusic"
+		></input>
+		<navigator url="/pages/searchList/index?value={{searchValue}}" class="buttonSearch">
+			搜索
+		</navigator>
+	</view>
+</view>
+
+<!-- 收藏类信息 -->
+<view class="main">
+	<view class="grid col-3 padding-sm ">
+		<view class="padding-sm margin-top" wx:for="{{5}}">
+			<view class=" shadow-blur">
+				<view class="main-value">
+					<image
+					 class="imgPet"
+					 widthFix
+					 src="https://i0.hdslb.com/bfs/album/47f3b6b1485c2619dda1ae9e3c340b4fab9c15b3.gif"
+					></image>
+					<view class="main-value-text text-center">喜欢</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 搜索提示框 -->
+<view class=" bg-cyan search-music-value-main light" hidden="{{!inputFocus}}">
+	<navigator
+	 wx:for="{{musicName}}"
+	 wx:key="{{item.id}}"
+	 wx:for-item="item1"
+	 wx:for-index="index1"
+	 url="/pages/searchList/index?value={{item1.name}} {{item1.artists[0].name}}"
+	>
+		<view class="search-music-value">
+			{{item1.name}}—
+			<span
+			 wx:for="{{item1.artists}}"
+			 wx:key="this"
+			 wx:for-item="item2"
+			 wx:for-index="index2"
+			>
+				{{item2.name}}
+				<text wx:if="{{index2<item1.artists.length-1}}">、</text>
+			</span>
+		</view>
+	</navigator>
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 </view>
 <view class="musicPet">
 	<image
@@ -35,4 +97,25 @@
 	 src="https://i0.hdslb.com/bfs/album/7ef3f83f68c67d585b63fd03f69eb8d7f4f8c7d9.gif@518w_1e_1c.gif"
 	></image>
 </view>
+<<<<<<< HEAD
+=======
+<!-- 底部内容 -->
+<view class="cu-bar tabbar bg-white bar">
+	<view class="action text-mikuGreen">
+		<view class="cuIcon-homefill"></view>
+		首页
+	</view>
+	<view class="action text-gray">
+		<view class="bgr-music-bg flex">
+			<view class="bgr-music">
+				<image mode="widthFix" src="https://i0.hdslb.com/bfs/album/13d4ce8b65a618f9efdf7557e530b2f585027063.gif"></image>
+			</view>
+		</view>
+	</view>
+	<view class="action text-gray">
+		<view class="cuIcon-my"></view>
+		我的
+	</view>
+</view>
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 

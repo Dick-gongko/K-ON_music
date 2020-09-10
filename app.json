@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+<<<<<<< HEAD
     "pages/home/index",
     "pages/searchList/index",
     "pages/lyric/index",
@@ -13,6 +14,9 @@
     "pages/appreciate/index",
     "pages/await/index"
 
+=======
+    "pages/searchList/index"
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
   ],
   
   "window": {

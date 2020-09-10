@@ -1,25 +1,49 @@
+<<<<<<< HEAD
 <cu-custom bgColor="bg-tianyi-miku" isCustom="{{true}}">
 	<view slot="content">梦开始的地方</view>
 </cu-custom>
 
+=======
+<cu-custom bgColor="bg-tianyi-miku">
+	<view slot="content">梦开始的地方</view>
+</cu-custom>
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 <!-- 搜素功能 -->
 <view class="bg-tianyi-miku searchMusicBg flex">
 	<view class="inputSearcMusicView">
 		<input
 		 type="text"
 		 bindinput="searchMusic"
+<<<<<<< HEAD
 		 value="{{searchValue}}"
 		 placeholder="发现爱的开始"
+=======
+		 placeholder="搜素歌曲"
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 		 bindfocus="inputFocustrue"
 		 bindblur="inputFocusfalse"
 		 class="padding-left inputSearcMusic"
 		></input>
+<<<<<<< HEAD
 		<view class="buttonSearch" bindtap="tapSearch">
 			出发
 		</view>
 	</view>
 </view>
 
+=======
+		<navigator class="buttonSearch" url="/pages/searchList/index?value={{searchValue}}">
+			搜索
+		</navigator>
+	</view>
+</view>
+
+<!-- 播放选项 -->
+<view class="music-main">
+
+</view>
+
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 <!-- 歌曲列表 -->
 <view class="music-list-main">
 	<view
@@ -29,10 +53,14 @@
 	 wx:for-index="index1"
 	 wx:key="{{item1.id}}"
 	 bindtap="tapMusic"
+<<<<<<< HEAD
 	 data-musicName="{{item1.name}}"
 	 data-artists="{{item1.artists}}"
 	 data-id="{{item1.id}}"
 	 style="{{item1.id==previousMusicId?'background-color: pink;color: #66ccff;':''}}"
+=======
+	 data-id="{{item1.id}}"
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 	>
 		{{item1.name}}—
 		<span
@@ -41,7 +69,10 @@
 		 wx:for-item="item2"
 		 wx:for-index="index2"
 		 class="artists-name"
+<<<<<<< HEAD
 		 style="{{item1.id==previousMusicId?'color: #39c5bb;':''}}"
+=======
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
 		>
 			{{item2.name}}
 			<text wx:if="{{index2<item1.artists.length-1}}">、</text>
@@ -49,6 +80,7 @@
 	</view>
 </view>
 
+<<<<<<< HEAD
 <!-- 搜索提示框 -->
 <view class=" bg-cyan search-music-value-main light" hidden="{{!inputFocus}}">
 	<view
@@ -120,3 +152,5 @@
 	></image>
 </view>
 
+=======
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5

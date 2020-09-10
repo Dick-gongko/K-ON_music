@@ -77,6 +77,7 @@
           "pathName": "pages/searchList/index",
           "query": "value= 勾指起誓",
           "scene": null
+<<<<<<< HEAD
         },
         {
           "id": 1,
@@ -139,6 +140,8 @@
           "name": "未完成",
           "pathName": "pages/await/index",
           "scene": null
+=======
+>>>>>>> 2cde9512485d8e95de002db44bf037c6ac8ce1e5
         }
       ]
     }
